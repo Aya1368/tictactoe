@@ -29,7 +29,7 @@ const Game = () => {
 
   const renderMoves = () =>
     history.map((_step, move) => {
-      const destination = move ? `Go to move #${move}` : "Go to Start";
+      const destination = move ? `Go to move #${move}` : "Start";
       return (
         <li key={move}>
           <button onClick={() => jumpTo(move)}>{destination}</button>
